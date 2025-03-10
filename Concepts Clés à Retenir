@@ -1,0 +1,47 @@
+# Résumé des Exercices SQL
+
+## 🔹 Concepts Clés à Retenir
+
+### 📌 1. **Création et Gestion d'une Base de Données**
+- **Créer une base de données** : `CREATE DATABASE nom_base;`
+- **Sélectionner une base** : `USE nom_base;`
+- **Créer une table** : `CREATE TABLE nom_table (...);`
+- **Afficher les tables** : `SHOW TABLES;`
+
+### 📌 2. **Manipulation des Données**
+- **Ajouter un étudiant** : `INSERT INTO etudiant (nom, prenom, age, email) VALUES (...);`
+- **Mettre à jour une valeur** : `UPDATE etudiant SET age = X WHERE nom = '...' AND prenom = '...';`
+- **Supprimer un étudiant** : `DELETE FROM etudiant WHERE nom = '...' AND prenom = '...';`
+
+### 📌 3. **Requêtes de Sélection**
+- **Afficher tous les étudiants** : `SELECT * FROM etudiant;`
+- **Récupérer les étudiants mineurs** : `SELECT * FROM etudiant WHERE age < 18;`
+- **Afficher les étudiants d’une même famille** : `SELECT * FROM etudiant WHERE nom = 'Dupuis';`
+- **Lister les étudiants entre 18 et 25 ans** : `SELECT * FROM etudiant WHERE age BETWEEN 18 AND 25;`
+- **Rechercher un prénom commençant par 'B'** : `SELECT * FROM etudiant WHERE prenom LIKE 'B%';`
+
+### 📌 4. **Tri et Classement**
+- **Trier les étudiants par âge croissant** : `SELECT * FROM etudiant ORDER BY age ASC;`
+- **Trier les étudiants par nom** : `SELECT * FROM etudiant ORDER BY nom ASC;`
+- **Afficher l’étudiant le plus jeune** : `SELECT * FROM etudiant ORDER BY age ASC LIMIT 1;`
+- **Afficher l’étudiant le plus âgé** : `SELECT * FROM etudiant ORDER BY age DESC LIMIT 1;`
+
+### 📌 5. **Statistiques et Comptage**
+- **Nombre total d'étudiants** : `SELECT COUNT(*) FROM etudiant;`
+- **Nombre d'étudiants mineurs** : `SELECT COUNT(*) FROM etudiant WHERE age < 18;`
+- **Nombre d'étudiants entre 18 et 25 ans** : `SELECT COUNT(*) FROM etudiant WHERE age BETWEEN 18 AND 25;`
+- **Moyenne d'âge des étudiants** : `SELECT AVG(age) FROM etudiant;`
+
+### 📌 6. **Sauvegarde et Restauration**
+- **Sauvegarder la base** : `mysqldump -u root -p nom_base > backup.sql`
+- **Restaurer la base** : `mysql -u root -p nom_base < backup.sql`
+
+## 🎯 Conclusion
+Ce parcours d'exercices t'a permis de :
+✔ Manipuler les bases de données avec **SQL** (insertion, suppression, mise à jour).
+✔ Faire des requêtes pour **filtrer, trier et analyser** les données.
+✔ Comprendre les **fonctions de calculs** comme `COUNT()`, `AVG()`.
+✔ Sauvegarder et restaurer ta base de données.
+
+💡 **SQL est un outil puissant !** Pratique régulièrement pour devenir plus à l’aise et optimiser tes requêtes. 🚀
+
