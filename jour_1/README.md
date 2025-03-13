@@ -1,16 +1,17 @@
-# README - SQL Jobs
+# 📌 SQL Jobs - Automatisation des Requêtes et Gestion des Données Étudiants  
 
-## 📌 Description
-Ce projet contient une série de requêtes SQL permettant d'effectuer différentes opérations sur une base de données `etudiant`. Chaque fichier SQL correspond à un job spécifique et exécute une requête bien définie.
+## 🔍 Description  
+Ce projet contient une série de **requêtes SQL** permettant d’effectuer diverses opérations sur une base de données `etudiant`.  
+Chaque fichier SQL correspond à une tâche spécifique : **tri, calculs statistiques, mises à jour et suppressions conditionnelles**.  
 
-## 📂 Structure du projet
+---
 
-Le projet est organisé en fichiers SQL numérotés de `job1.sql` à `job24.sql`, chacun correspondant à une tâche spécifique.
+## 📂 Structure du Projet  
 
-### 🔹 Liste des Jobs et leurs fonctions :
+📁 **Liste des fichiers SQL et leurs fonctions :**  
 
-| Fichier       | Description |
-|--------------|-------------|
+| 📄 **Fichier SQL** | 🔎 **Description** |
+|------------------|----------------|
 | `job9.sql`   | Sauvegarde de la base de données `LaPlateforme` |
 | `job10.sql`  | Tri des étudiants par âge (ordre croissant) |
 | `job11.sql`  | Récupération des informations de Gertrude Dupuis |
@@ -28,46 +29,48 @@ Le projet est organisé en fichiers SQL numérotés de `job1.sql` à `job24.sql`
 | `job23.sql`  | Récupération de l'étudiant le plus âgé |
 | `job24.sql`  | Calcul de la moyenne d'âge des étudiants |
 
-## 🛠️ Utilisation
-1. **Exécuter un fichier SQL** :
-   ```sh
-   mysql -u root -p LaPlateforme < jobXX.sql
-   ```
-   Remplace `jobXX.sql` par le fichier SQL que tu veux exécuter.
+---
 
-2. **Lancer MySQL en mode interactif** et exécuter un fichier SQL :
-   ```sh
-   mysql -u root -p
-   ```
-   Puis, dans MySQL :
-   ```sql
-   SOURCE jobXX.sql;
-   ```
+## 🛠️ Utilisation  
 
-3. **Sauvegarde et restauration de la base** :
-   ```sh
-   mysqldump -u root -p LaPlateforme > backup.sql
-   mysql -u root -p LaPlateforme < backup.sql
-   ```
+📌 **Exécuter un fichier SQL spécifique** : 
 
-## 🚀 Contribution
-Si tu veux modifier ou améliorer ce projet :
-1. Clone le dépôt :
-   ```sh
-   git clone <URL_GITHUB>
-   ```
-2. Ajoute tes modifications et commit :
-   ```sh
-   git add .
-   git commit -m "Ajout d'une nouvelle requête SQL"
-   ```
-3. Pousse tes changements sur GitHub :
-   ```sh
-   git push origin main
-   ```
+   `mysql -u root -p LaPlateforme < jobXX.sql`
+   🔹 Remplace jobXX.sql par le fichier SQL que tu veux exécuter.
 
-## 📌 Auteur
-Projet réalisé par **LARCHER** dans le cadre de l'apprentissage des bases de données SQL.
+   
+📌 Lancer MySQL en mode interactif et exécuter un fichier SQL :
+`mysql -u root -p`
 
-📅 Date : [MARS, 2025]
+Puis dans MySQL :
+`SOURCE jobXX.sql;`
+
+#📌 Sauvegarde et restauration de la base de données :
+ Sauvegarde
+`mysqldump -u root -p LaPlateforme > backup.sql`
+
+ Restauration
+`mysql -u root -p LaPlateforme < backup.sql`
+
+🚀 Contribution
+
+📌 Tu veux modifier ou améliorer ce projet ?
+
+1️⃣ Clone le dépôt : `git clone <(https://github.com/kylliann-larcher/runtrack-BDD-python/edit/main/jour_1)>`
+
+📌 Auteur
+📅 Projet réalisé en mars 2025
+
+👤 LARCHER Kylliann
+
+📧 Email : kylliann.larcher@laplateforme.io
+
+
+
+
+
+
+
+
+
 
